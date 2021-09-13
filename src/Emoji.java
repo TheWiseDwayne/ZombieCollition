@@ -82,7 +82,7 @@ public class Emoji {
             GRectangle rectangle2 = Application.alive.get(i).getImage().getBounds();
 
             if (rectangle1.intersects(rectangle2)) {
-                Application.alive.get(i).setZombie(true); //Passa a ser true i per tant es canvia la imatge
+                Application.alive.get(i).setZombie(true); 
                 Application.zombies.add(Application.alive.get(i));
                 Application.alive.remove(i);
             }
